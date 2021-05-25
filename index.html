@@ -23,6 +23,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- CSS -->
         <link href="./assets/css/tailwind.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains+Mono">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
             integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
             crossorigin="anonymous" />
@@ -37,15 +38,16 @@
         <meta property="og:description" content="A developer and tech enthusiast from the Netherlands.">
         <meta property="og:url" content="https://robert-s.dev/">
         <meta property="og:image" content="./assets/img/logo.jpg">
+        <meta name="theme-color" content="#111827">
     </head>
-    <body class="bg-gray-900 text-white">
+    <body class="bg-darkBlue-default text-white font-mono">
         <div class="h-screen top-0 left-0">
             <!-- Header -->
             <header x-data="{ mobileMenuOpen : false }" class="body-font">
                 <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row">
                     <div class="flex">
                         <a href="/" class="flex title-font font-medium items-center mb-4 md:mb-0">
-                            <span class="text-2xl font-bold hover:text-gray-300 duration-200">Robert S.</span>
+                            <span class="text-2xl font-bold hover:text-gray-400 duration-200">Robert S.</span>
                         </a>
                         <button @click="mobileMenuOpen = !mobileMenuOpen"
                             class="inline-block md:hidden w-8 h-8 text-gray-400 focus:text-white p-1 ml-auto">
@@ -64,25 +66,25 @@
                     </div>
                     <nav class="md:ml-auto md:flex flex-wrap flex-col md:flex-row md:space-x-4 items-center w-full pt-2 md:pt-0 md:w-auto text-lg justify-center font-semibold"
                         :class="{ 'flex' : mobileMenuOpen , 'hidden' : !mobileMenuOpen}" @click.away="mobileMenuOpen = false">
-                        <a class="w-full sm:w-auto flex-none bg-gray-900 hover:text-gray-300 text-lg leading-6 font-semibold py-2 border border-transparent rounded-xl focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-gray-900 focus:outline-none transition-colors duration-200 mr-auto mr-0@m"
+                        <a class="w-full sm:w-auto flex-none bg-darkBlue-default text-gray-400 hover:text-white text-sm leading-6 font-semibold py-2 rounded focus:ring-2 focus:ring-offset-2 focus:outline-none transition-colors duration-200 mr-auto mr-0@m"
                             href="#projects">Projects</a>
-                        <a class="w-full sm:w-auto flex-none bg-gray-900 hover:text-gray-300 text-lg leading-6 font-semibold py-2 border border-transparent rounded-xl focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-gray-900 focus:outline-none transition-colors duration-200 mr-auto mr-0@m"
+                        <a class="w-full sm:w-auto flex-none bg-darkBlue-default text-gray-400 hover:text-white text-sm leading-6 font-semibold py-2 rounded focus:ring-2 focus:ring-offset-2 focus:outline-none transition-colors duration-200 mr-auto mr-0@m"
                             href="#about">About</a>
-                        <a class="w-full sm:w-auto flex-none bg-purple-700 hover:bg-purple-600 hover:text-gray-100 text-lg leading-6 font-semibold py-2 px-6 border border-transparent rounded-xl focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-gray-900 focus:outline-none transition-colors duration-200 mr-auto mr-0@m"
+                        <a class="w-full sm:w-auto flex-none bg-darkBlue-light hover:bg-darkBlue-lightest text-sm text-gray-400 hover:text-white leading-6 font-semibold py-2 px-5 rounded focus:ring-2 focus:ring-offset-2 focus:outline-none transition-colors duration-200 mr-auto mr-0@m"
                             href="#contact">Contact</a>
                     </nav>
                 </div>
             </header>
             <!-- Hero -->
-            <section id="hero" class="bg-gray-900 body-font h-1/2 m-auto absolute inset-0">
+            <section id="hero" class="body-font h-1/2 m-auto absolute inset-0">
                 <div class="container flex mx-auto items-center justify-center absolute inset-0">
                     <div class="text-center">
-                        <h1 class="title-font sm:text-5xl text-4xl mb-1 font-bold animate__animated animate__fadeInUp animate__fast">Hi, I'm Robert S.</h1>
-                        <p class="leading-relaxed mb-2 text-xl font-medium animate__animated animate__fadeInUp animate__fast">Developer & Tech enthusiast</p>
-                        <div class="flex justify-center">
-                            <a class="animate__animated animate__fadeInUp sm:w-auto flex-none bg-purple-700 hover:bg-purple-600 hover:text-gray-100 text-lg leading-6 font-semibold py-2 px-6 border border-transparent rounded-xl focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-gray-900 focus:outline-none transition-colors duration-200 mr-2" href="#projects">My Projects</a>
-                            <a class="animate__animated animate__fadeInUp sm:w-auto flex-none bg-purple-700 hover:bg-purple-600 hover:text-gray-100 text-lg leading-6 font-semibold py-2 px-6 border border-transparent rounded-xl focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-gray-900 focus:outline-none transition-colors duration-200 ml-2" href="#about">About Me</a>
-                        </div>
+                        <h1 class="title-font sm:text-4xl text-3xl mb-1 font-bold animate__animated animate__fadeInUp animate__fast">Hi, I'm Robert S.</h1>
+                        <p class="text-gray-400 leading-relaxed mb-2 text-lg font-medium animate__animated animate__fadeInUp animate__fast">Developer & Tech enthusiast</p>
+                        <!-- <div class="flex justify-center">
+                            <a class="animate__animated animate__fadeInUp sm:w-auto flex-none bg-purple-700 hover:bg-purple-600 hover:text-gray-100 text-lg leading-6 font-semibold py-2 px-6 border border-transparent rounded focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-gray-900 focus:outline-none transition-colors duration-200 mr-2" href="#projects">My Projects</a>
+                            <a class="animate__animated animate__fadeInUp sm:w-auto flex-none bg-purple-700 hover:bg-purple-600 hover:text-gray-100 text-lg leading-6 font-semibold py-2 px-6 border border-transparent rounded focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-gray-900 focus:outline-none transition-colors duration-200 ml-2" href="#about">About Me</a>
+                        </div> -->
                     </div>
                 </div>
             </section>
@@ -91,63 +93,63 @@
         <section class="body-font pb-24">
             <div id="projects" class="container mx-auto">
                 <div class="animated flex flex-col text-center w-full mb-10">
-                    <h1 class="sm:text-5xl text-4xl font-bold title-font mb-4">
+                    <h1 class="sm:text-4xl text-3xl font-bold title-font mb-4">
                         Featured Projects
                     </h1>
                 </div>
                 <div class="lg:w-3/5 w-11/12 mx-auto overflow-auto">
                     <div class="w-full grid gap-20 grid-cols-1 md:grid-cols-2">
-                        <div class="animated bg-gray-800 rounded-lg gap-3 shadow-xl">
+                        <div class="animated bg-darkBlue-lighter rounded-lg gap-3">
                             <img loading=lazy class="flex-shrink-0 rounded-t-lg w-full h-56 object-cover object-center mb-1"
                                 src="./assets/img/Wavy.png">
                             <div class="flex-grow pl-2 py-2">
                                 <h1 class="text-3xl font-bold">Wavy</h1>
-                                <p class="text-gray-200 py-2">
+                                <p class="text-gray-400 py-2 pr-5">
                                     Wavy is a blazingly fast and powerful yet easy-to-use multi-purpose Discord bot. The primary purpose of Wavy is to be
                                     very fast.
                                 </p>
-                                <a class="inline-flex items-center bg-gray-700 border-0 py-3 px-3 focus:outline-none hover:bg-gray-600 rounded-full text-base mt-4 md:mt-0" href="https://wavybot.com" target="_blank"><i class="fas fa-link"></i></a>
-                                <a class="inline-flex items-center bg-gray-700 border-0 py-3 px-3 focus:outline-none hover:bg-gray-600 rounded-full text-base mt-4 md:mt-0"
+                                <a class="inline-flex items-center bg-darkBlue-light border-0 py-3 px-3 focus:outline-none hover:bg-darkBlue-lightest rounded-full text-base mt-4 md:mt-0" href="https://wavybot.com" target="_blank"><i class="fas fa-link"></i></a>
+                                <a class="inline-flex items-center bg-darkBlue-light border-0 py-3 px-3 focus:outline-none hover:bg-darkBlue-lightest rounded-full text-base mt-4 md:mt-0"
                                     href="https://github.com/Wavy-Bot" target="_blank"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
-                        <div class="animated bg-gray-800 rounded-lg gap-3 shadow-xl">
+                        <div class="animated bg-darkBlue-lighter rounded-lg gap-3">
                             <img loading=lazy class="flex-shrink-0 rounded-t-lg w-full h-56 object-cover object-center mb-1"
                                 src="./assets/img/Robert-S.png">
                             <div class="flex-grow pl-2 py-2">
                                 <h1 class="text-3xl font-bold">SharePY</h1>
-                                <p class="text-gray-200 py-2">
+                                <p class="text-gray-400 py-2 pr-5">
                                     SharePY is a cross-platform ShareX alternative made with Python 3 that is fully compatible with ShareX upload scripts.
                                 </p>
-                                <a class="inline-flex items-center bg-gray-700 border-0 py-3 px-3 focus:outline-none hover:bg-gray-600 rounded-full text-base mt-4 md:mt-0"
+                                <a class="inline-flex items-center bg-darkBlue-light border-0 py-3 px-3 focus:outline-none hover:bg-darkBlue-lightest rounded-full text-base mt-4 md:mt-0"
                                     href="https://github.com/pyTrinkets/SharePY" target="_blank"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
-                        <div class="animated bg-gray-800 rounded-lg gap-3 shadow-xl">
+                        <div class="animated bg-darkBlue-lighter rounded-lg gap-3">
                             <img loading=lazy class="flex-shrink-0 rounded-t-lg w-full h-56 object-cover object-center mb-1"
                                 src="./assets/img/ConnectedHost.png">
                             <div class="flex-grow pl-2 py-2">
                                 <h1 class="text-3xl font-bold">ConnectedHost</h1>
-                                <p class="text-gray-200 py-2">
+                                <p class="text-gray-400 py-2 pr-5">
                                     ConnectedHost is a free web hosting company that aims to offer reliable and free web hosting for everyone.
                                 </p>
-                                <a class="inline-flex items-center bg-gray-700 border-0 py-3 px-3 focus:outline-none hover:bg-gray-600 rounded-full text-base mt-4 md:mt-0"
+                                <a class="inline-flex items-center bg-darkBlue-light border-0 py-3 px-3 focus:outline-none hover:bg-darkBlue-lightest rounded-full text-base mt-4 md:mt-0"
                                     href="https://connectedhost.xyz" target="_blank"><i class="fas fa-link"></i></a>
-                                <a class="inline-flex items-center bg-gray-700 border-0 py-3 px-3 focus:outline-none hover:bg-gray-600 rounded-full text-base mt-4 md:mt-0"
+                                <a class="inline-flex items-center bg-darkBlue-light border-0 py-3 px-3 focus:outline-none hover:bg-darkBlue-lightest rounded-full text-base mt-4 md:mt-0"
                                     href="https://github.com/ConnectedHost" target="_blank"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
-                        <div class="animated bg-gray-800 rounded-lg gap-3 shadow-xl">
+                        <div class="animated bg-darkBlue-lighter rounded-lg gap-3">
                             <img loading=lazy class="flex-shrink-0 rounded-t-lg w-full h-56 object-cover object-center mb-1"
                                 src="https://dummyimage.com/489x277">
                             <div class="flex-grow pl-2 py-2">
                                 <h1 class="text-3xl font-bold">Soon™</h1>
-                                <p class="text-gray-200 py-2 pb-8">
-                                    More projects are coming soon!
+                                <p class="text-gray-400 py-2 pr-5">
+                                    Stay tuned for more projects! :)
                                 </p>
-                                <a class="inline-flex items-center bg-gray-700 border-0 py-3 px-3 focus:outline-none hover:bg-gray-600 rounded-full text-base mt-4 md:mt-0"
+                                <a class="inline-flex items-center bg-darkBlue-light border-0 py-3 px-3 focus:outline-none hover:bg-darkBlue-lightest rounded-full text-base mt-4 md:mt-0"
                                     href="#"><i class="fas fa-link"></i></a>
-                                <a class="inline-flex items-center bg-gray-700 border-0 py-3 px-3 focus:outline-none hover:bg-gray-600 rounded-full text-base mt-4 md:mt-0"
+                                <a class="inline-flex items-center bg-darkBlue-light border-0 py-3 px-3 focus:outline-none hover:bg-darkBlue-lightest rounded-full text-base mt-4 md:mt-0"
                                     href="#"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
@@ -159,33 +161,33 @@
         <section class="body-font pb-24">
             <div id="about" class="container mx-auto">
                 <div class="animated flex flex-col text-center w-full mb-10">
-                    <h1 class="sm:text-5xl text-4xl font-bold title-font mb-4">
+                    <h1 class="sm:text-4xl text-3xl font-bold title-font mb-4">
                         About Me
                     </h1>
                 </div>
                 <div class="animated lg:w-3/5 w-11/12 mx-auto overflow-auto font-medium text-center">
-                    <h3 class="text-3xl">Hey, I'm Robert - a full-stack developer from the Netherlands with approximately three years of back-end development experience
+                    <h3 class="text-2xl text-gray-400">Hey, I'm Robert - a full-stack developer from the Netherlands with approximately three years of back-end development experience
                     and five years of front-end development experience. Nowadays, I mainly use Flask and TailwindCSS for my projects, but I
                     have used different frameworks in the past. A few of my hobbies include listening to music and, of course, coding. My
                     biggest flaw is undoubted that I am very unorganized, but I've mostly got the hang of how to manage that.</h3>
-                    <h3 class="text-3xl mt-16">I can use the following technologies/frameworks fluently:</h3>
+                    <h3 class="text-2xl mt-16">I can use the following technologies/frameworks fluently:</h3>
                     <div class="animated mx-auto overflow-auto font-medium text-center mt-4 space-y-1.5">
-                        <h2 class="inline-flex items-center bg-gray-800 border-0 py-2 px-3 rounded-lg text-base mt-4 md:mt-0">Python</h2>
-                        <h2 class="inline-flex items-center bg-gray-800 border-0 py-2 px-3 rounded-lg text-base mt-4 md:mt-0">Flask (and forks of it like Quart)</h2>
-                        <h2 class="inline-flex items-center bg-gray-800 border-0 py-2 px-3 rounded-lg text-base mt-4 md:mt-0">HTML & CSS</h2>
-                        <h2 class="inline-flex items-center bg-gray-800 border-0 py-2 px-3 rounded-lg text-base mt-4 md:mt-0">Javascript (front-end)</h2>
-                        <h2 class="inline-flex items-center bg-gray-800 border-0 py-2 px-3 rounded-lg text-base mt-4 md:mt-0">PostgreSQL</h2>
-                        <h2 class="inline-flex items-center bg-gray-800 border-0 py-2 px-3 rounded-lg text-base mt-4 md:mt-0">MySQL</h2>
-                        <h2 class="inline-flex items-center bg-gray-800 border-0 py-2 px-3 rounded-lg text-base mt-4 md:mt-0">MongoDB (I hate it, though)</h2>
-                        <h2 class="inline-flex items-center bg-gray-800 border-0 py-2 px-3 rounded-lg text-base mt-4 md:mt-0">TailwindCSS</h2>
-                        <h2 class="inline-flex items-center bg-gray-800 border-0 py-2 px-3 rounded-lg text-base mt-4 md:mt-0">UIkit</h2>
-                        <h2 class="inline-flex items-center bg-gray-800 border-0 py-2 px-3 rounded-lg text-base mt-4 md:mt-0">Bootstrap</h2>
-                        <h2 class="inline-flex items-center bg-gray-800 border-0 py-2 px-3 rounded-lg text-base mt-4 md:mt-0">Cirrus UI</h2>
+                        <h2 class="inline-flex items-center bg-darkBlue-light border-0 py-2 px-3 rounded-lg text-base mt-4 md:mt-0">Python</h2>
+                        <h2 class="inline-flex items-center bg-darkBlue-light border-0 py-2 px-3 rounded-lg text-base mt-4 md:mt-0">Flask (and forks of it like Quart)</h2>
+                        <h2 class="inline-flex items-center bg-darkBlue-light border-0 py-2 px-3 rounded-lg text-base mt-4 md:mt-0">HTML & CSS</h2>
+                        <h2 class="inline-flex items-center bg-darkBlue-light border-0 py-2 px-3 rounded-lg text-base mt-4 md:mt-0">Javascript (front-end)</h2>
+                        <h2 class="inline-flex items-center bg-darkBlue-light border-0 py-2 px-3 rounded-lg text-base mt-4 md:mt-0">PostgreSQL</h2>
+                        <h2 class="inline-flex items-center bg-darkBlue-light border-0 py-2 px-3 rounded-lg text-base mt-4 md:mt-0">MySQL</h2>
+                        <h2 class="inline-flex items-center bg-darkBlue-light border-0 py-2 px-3 rounded-lg text-base mt-4 md:mt-0">MongoDB (I hate it, though)</h2>
+                        <h2 class="inline-flex items-center bg-darkBlue-light border-0 py-2 px-3 rounded-lg text-base mt-4 md:mt-0">TailwindCSS</h2>
+                        <h2 class="inline-flex items-center bg-darkBlue-light border-0 py-2 px-3 rounded-lg text-base mt-4 md:mt-0">UIkit</h2>
+                        <h2 class="inline-flex items-center bg-darkBlue-light border-0 py-2 px-3 rounded-lg text-base mt-4 md:mt-0">Bootstrap</h2>
+                        <h2 class="inline-flex items-center bg-darkBlue-light border-0 py-2 px-3 rounded-lg text-base mt-4 md:mt-0">Cirrus UI</h2>
                     </div>
-                    <h3 class="text-3xl mt-4">And these are the technologies that I'm still learning:</h3>
+                    <h3 class="text-2xl mt-4">And these are the technologies that I'm still learning:</h3>
                     <div class="animated mx-auto overflow-auto font-medium text-center mt-4 space-y-1.5">
-                        <h2 class="inline-flex items-center bg-gray-800 border-0 py-2 px-3 rounded-lg text-base mt-4 md:mt-0">Go</h2>
-                        <h2 class="inline-flex items-center bg-gray-800 border-0 py-2 px-3 rounded-lg text-base mt-4 md:mt-0">C++</h2>
+                        <h2 class="inline-flex items-center bg-darkBlue-light border-0 py-2 px-3 rounded-lg text-base mt-4 md:mt-0">Go</h2>
+                        <h2 class="inline-flex items-center bg-darkBlue-light border-0 py-2 px-3 rounded-lg text-base mt-4 md:mt-0">C++</h2>
                     </div>
                 </div>
             </div>
@@ -194,20 +196,20 @@
         <section class="body-font pb-24">
             <div id="contact" class="container mx-auto">
                 <div class="animated flex flex-col text-center w-full mb-10">
-                    <h1 class="sm:text-5xl text-4xl font-bold title-font mb-4">
+                    <h1 class="sm:text-4xl text-3xl font-bold title-font mb-4">
                         Contact Me
                     </h1>
                 </div>
             </div>
             <div class="animated lg:w-3/5 w-full mx-auto overflow-auto font-medium text-center">
-                <a class="inline-flex items-center bg-gray-700 border-0 py-3 px-3 focus:outline-none hover:bg-gray-600 rounded-full text-base mt-4 md:mt-0"
+                <a class="inline-flex items-center bg-darkBlue-light border-0 py-3 px-3 focus:outline-none hover:bg-darkBlue-lightest rounded-full text-base mt-4 md:mt-0"
                     href="mailto:admin@robert-s.dev"><i class="fas fa-envelope"></i></a>
-                <a class="inline-flex items-center bg-gray-700 border-0 py-3 px-3 focus:outline-none hover:bg-gray-600 rounded-full text-base mt-4 md:mt-0"
+                <a class="inline-flex items-center bg-darkBlue-light border-0 py-3 px-3 focus:outline-none hover:bg-darkBlue-lightest rounded-full text-base mt-4 md:mt-0"
                     href="https://github.com/Wallvon" target="_blank"><i class="fab fa-github"></i></a>
-                <button class="has-tooltip inline-flex items-center bg-gray-700 border-0 py-3 px-3 focus:outline-none hover:bg-gray-600 rounded-full text-base mt-4 md:mt-0" data-clipboard-text="That Guy#5275"><span class='tooltip rounded shadow-lg p-1 bg-gray-800 text-white -mt-16'>That Guy#5275</span><i class="fab fa-discord"></i></button>
-                <a class="inline-flex items-center bg-gray-700 border-0 py-3 px-3 focus:outline-none hover:bg-gray-600 rounded-full text-base mt-4 md:mt-0"
+                <button class="has-tooltip inline-flex items-center bg-darkBlue-light border-0 py-3 px-3 focus:outline-none hover:bg-darkBlue-lightest rounded-full text-base mt-4 md:mt-0" data-clipboard-text="That Guy#5275"><span class='tooltip rounded shadow-lg p-1 bg-darkBlue-light text-white -mt-16'>That Guy#5275</span><i class="fab fa-discord"></i></button>
+                <a class="inline-flex items-center bg-darkBlue-light border-0 py-3 px-3 focus:outline-none hover:bg-darkBlue-lightest rounded-full text-base mt-4 md:mt-0"
                     href="https://twitter.com/ThatGuy5275" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a class="inline-flex items-center bg-gray-700 border-0 py-3 px-3 focus:outline-none hover:bg-gray-600 rounded-full text-base mt-4 md:mt-0"
+                <a class="inline-flex items-center bg-darkBlue-light border-0 py-3 px-3 focus:outline-none hover:bg-darkBlue-lightest rounded-full text-base mt-4 md:mt-0"
                     href="https://instagram.com/robert.__.s" target="_blank"><i class="fab fab fa-instagram"></i></a>
             </div>
         </section>
@@ -215,8 +217,8 @@
         <footer id="footer" class="animated body-font">
             <div class="container px-5 py-4 mx-auto flex items-center justify-center sm:flex-row flex-col">
                 <span class="inline-flex justify-center text-center">
-                    <p class="text-sm py-2"><i class="fas fa-pencil-ruler"></i> & <i class="fas fa-terminal"></i> with <i
-                            class="fas fa-heart animate-pulse"></i> by <a href="https://robert-s.dev/">Robert
+                    <p class="text-sm py-2 text-gray-400"><i class="fas fa-pencil-ruler"></i> & <i class="fas fa-terminal"></i> with <i
+                            class="fas fa-heart animate-pulse"></i> by <a class="text-white" href="https://robert-s.dev/">Robert
                             S.</a>
                 </span>
             </div>
