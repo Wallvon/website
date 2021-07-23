@@ -25,7 +25,6 @@
         <link href="./assets/css/tailwind.css" rel="stylesheet">
         <link rel="stylesheet" href="./assets/css/jetbrains.css">
         <link rel="stylesheet" href="./assets/css/fontawesome.css"/>
-        <link rel="stylesheet" href="./assets/css/animate.css">
         <!-- JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js" integrity="sha512-Kr+RPfLjQ71E0cJ9nseJ6jwTrnmMnuSPnnsVQQ/ZYYCjOHKfJcWj8ILICXnvf9A7ZQChNzIbr9x/ZAxA6xAZlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- Embed -->
@@ -38,7 +37,7 @@
     <body class="bg-darkBlue-default text-white font-mono">
         <div class="h-screen top-0 left-0">
             <!-- Header -->
-            <header x-data="{ mobileMenuOpen : false }" class="body-font">
+            <header x-data="{ mobileMenuOpen : false }" class="body-font animated">
                 <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row">
                     <div class="flex">
                         <a href="/" class="flex title-font font-medium items-center mb-4 md:mb-0">
@@ -73,9 +72,9 @@
             <!-- Hero -->
             <section id="hero" class="body-font h-1/2 m-auto absolute inset-0">
                 <div class="container flex mx-auto items-center justify-center absolute inset-0">
-                    <div class="text-center">
-                        <h1 class="title-font sm:text-4xl text-3xl mb-1 font-bold animate__animated animate__fadeInUp animate__fast">Hi, I'm Robert S.</h1>
-                        <p class="text-gray-400 leading-relaxed mb-2 text-lg font-medium animate__animated animate__fadeInUp animate__fast">Developer & Tech enthusiast</p>
+                    <div class="text-center animated">
+                        <h1 class="title-font sm:text-4xl text-3xl mb-1 font-bold">Hi, I'm Robert S.</h1>
+                        <p class="text-gray-400 leading-relaxed mb-2 text-lg font-medium">Developer & Tech enthusiast</p>
                     </div>
                 </div>
             </section>
@@ -92,12 +91,11 @@
                     <div class="w-full grid gap-20 grid-cols-1 md:grid-cols-2">
                         <div class="animated bg-darkBlue-lighter rounded-lg gap-3">
                             <img alt="Wavy" loading=lazy class="flex-shrink-0 rounded-t-lg w-full h-56 object-cover object-center mb-1"
-                                src="./assets/img/Wavy.jpg">
+                                src="./assets/img/Wavy.jpg" width="489" height="277">
                             <div class="flex-grow pl-2 py-2">
                                 <h1 class="text-3xl font-bold">Wavy</h1>
                                 <p class="text-gray-400 py-2 pr-5">
-                                    Wavy is a blazing-fast and powerful yet easy-to-use multi-purpose Discord bot. The primary purpose of Wavy is to be
-                                    very fast.
+                                    Wavy is a blazing-fast and powerful yet easy-to-use multi-purpose Discord bot. The primary purpose of Wavy is to replace all other bots.
                                 </p>
                                 <a class="inline-flex items-center bg-darkBlue-light border-0 py-3 px-3 focus:outline-none hover:bg-darkBlue-lightest rounded-full text-base mt-4 md:mt-0" href="https://wavybot.com" target="_blank"><i class="fas fa-link"></i></a>
                                 <a class="inline-flex items-center bg-darkBlue-light border-0 py-3 px-3 focus:outline-none hover:bg-darkBlue-lightest rounded-full text-base mt-4 md:mt-0"
@@ -106,7 +104,7 @@
                         </div>
                         <div class="animated bg-darkBlue-lighter rounded-lg gap-3">
                             <img alt="SharePY" loading=lazy class="flex-shrink-0 rounded-t-lg w-full h-56 object-cover object-center mb-1"
-                                src="https://dummyimage.com/489x277">
+                                src="https://dummyimage.com/489x277" width="489" height="277">
                             <div class="flex-grow pl-2 py-2">
                                 <h1 class="text-3xl font-bold">SharePY</h1>
                                 <p class="text-gray-400 py-2 pr-5">
@@ -118,7 +116,7 @@
                         </div>
                         <div class="animated bg-darkBlue-lighter rounded-lg gap-3">
                             <img alt="ConnectedHost" loading=lazy class="flex-shrink-0 rounded-t-lg w-full h-56 object-cover object-center mb-1"
-                                src="./assets/img/ConnectedHost.jpg">
+                                src="./assets/img/ConnectedHost.jpg" width="489" height="277">
                             <div class="flex-grow pl-2 py-2">
                                 <h1 class="text-3xl font-bold">ConnectedHost</h1>
                                 <p class="text-gray-400 py-2 pr-5">
@@ -132,7 +130,7 @@
                         </div>
                         <div class="animated bg-darkBlue-lighter rounded-lg gap-3">
                             <img alt="Soon" loading=lazy class="flex-shrink-0 rounded-t-lg w-full h-56 object-cover object-center mb-1"
-                                src="https://dummyimage.com/489x277">
+                                src="https://dummyimage.com/489x277" width="489" height="277">
                             <div class="flex-grow pl-2 py-2">
                                 <h1 class="text-3xl font-bold">Soon™</h1>
                                 <p class="text-gray-400 py-2 pr-5">
