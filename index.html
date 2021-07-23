@@ -23,21 +23,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- CSS -->
         <link href="./assets/css/tailwind.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains+Mono">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-            crossorigin="anonymous" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css">
+        <link rel="stylesheet" href="./assets/css/jetbrains.css">
+        <link rel="stylesheet" href="./assets/css/fontawesome.css"/>
+        <link rel="stylesheet" href="./assets/css/animate.css">
         <!-- JS -->
-        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-        <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
-        <script src="./assets/js/main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js" integrity="sha512-Kr+RPfLjQ71E0cJ9nseJ6jwTrnmMnuSPnnsVQQ/ZYYCjOHKfJcWj8ILICXnvf9A7ZQChNzIbr9x/ZAxA6xAZlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- Embed -->
         <meta property="og:title" content="Robert S.">
         <meta property="og:description" content="A developer and tech enthusiast from the Netherlands.">
         <meta property="og:url" content="https://robert-s.dev/">
-        <meta property="og:image" content="./assets/img/logo.jpg">
+        <meta property="og:image" content="https://robert-s.dev/assets/img/logo.jpg">
         <meta name="theme-color" content="#111827">
     </head>
     <body class="bg-darkBlue-default text-white font-mono">
@@ -100,12 +95,13 @@
                 <div class="lg:w-3/5 w-11/12 mx-auto overflow-auto">
                     <div class="w-full grid gap-20 grid-cols-1 md:grid-cols-2">
                         <div class="animated bg-darkBlue-lighter rounded-lg gap-3">
-                            <img loading=lazy class="flex-shrink-0 rounded-t-lg w-full h-56 object-cover object-center mb-1"
+                            <img alt="Wavy" loading=lazy class="flex-shrink-0 rounded-t-lg w-full h-56 object-cover object-center mb-1"
                                 src="./assets/img/Wavy.png">
                             <div class="flex-grow pl-2 py-2">
                                 <h1 class="text-3xl font-bold">Wavy</h1>
                                 <p class="text-gray-400 py-2 pr-5">
-                                    Wavy is a blazing-fast, open-source and powerful yet easy-to-use multi-purpose Discord bot. It aims to replace all other bots in your Discord server.
+                                    Wavy is a blazingly fast and powerful yet easy-to-use multi-purpose Discord bot. The primary purpose of Wavy is to be
+                                    very fast.
                                 </p>
                                 <a class="inline-flex items-center bg-darkBlue-light border-0 py-3 px-3 focus:outline-none hover:bg-darkBlue-lightest rounded-full text-base mt-4 md:mt-0" href="https://wavybot.com" target="_blank"><i class="fas fa-link"></i></a>
                                 <a class="inline-flex items-center bg-darkBlue-light border-0 py-3 px-3 focus:outline-none hover:bg-darkBlue-lightest rounded-full text-base mt-4 md:mt-0"
@@ -113,7 +109,7 @@
                             </div>
                         </div>
                         <div class="animated bg-darkBlue-lighter rounded-lg gap-3">
-                            <img loading=lazy class="flex-shrink-0 rounded-t-lg w-full h-56 object-cover object-center mb-1"
+                            <img alt="Robert S." loading=lazy class="flex-shrink-0 rounded-t-lg w-full h-56 object-cover object-center mb-1"
                                 src="./assets/img/Robert-S.png">
                             <div class="flex-grow pl-2 py-2">
                                 <h1 class="text-3xl font-bold">SharePY</h1>
@@ -125,7 +121,7 @@
                             </div>
                         </div>
                         <div class="animated bg-darkBlue-lighter rounded-lg gap-3">
-                            <img loading=lazy class="flex-shrink-0 rounded-t-lg w-full h-56 object-cover object-center mb-1"
+                            <img alt="ConnectedHost" loading=lazy class="flex-shrink-0 rounded-t-lg w-full h-56 object-cover object-center mb-1"
                                 src="./assets/img/ConnectedHost.png">
                             <div class="flex-grow pl-2 py-2">
                                 <h1 class="text-3xl font-bold">ConnectedHost</h1>
@@ -139,7 +135,7 @@
                             </div>
                         </div>
                         <div class="animated bg-darkBlue-lighter rounded-lg gap-3">
-                            <img loading=lazy class="flex-shrink-0 rounded-t-lg w-full h-56 object-cover object-center mb-1"
+                            <img alt="soon" loading=lazy class="flex-shrink-0 rounded-t-lg w-full h-56 object-cover object-center mb-1"
                                 src="https://dummyimage.com/489x277">
                             <div class="flex-grow pl-2 py-2">
                                 <h1 class="text-3xl font-bold">Soon™</h1>
@@ -222,5 +218,8 @@
                 </span>
             </div>
         </footer>
+        <script src="./assets/js/main.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.2.2/cdn.min.js" integrity="sha512-B1mG20gde4TfQx8dZ4yGlmqm/uZAy//Ln0nDGrSxIPuKnZQdx7fA2Xt1VZh1j37kCp4W0KJ1xOlJ2zzhMjDyBw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js" integrity="sha512-sIqUEnRn31BgngPmHt2JenzleDDsXwYO+iyvQ46Mw6RL+udAUZj2n/u/PGY80NxRxynO7R9xIGx5LEzw4INWJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </body>
 </html>
