@@ -27,6 +27,9 @@
         <link rel="stylesheet" href="./assets/css/fontawesome.css"/>
         <!-- JS -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js" integrity="sha512-Kr+RPfLjQ71E0cJ9nseJ6jwTrnmMnuSPnnsVQQ/ZYYCjOHKfJcWj8ILICXnvf9A7ZQChNzIbr9x/ZAxA6xAZlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.2.2/cdn.min.js"
+            integrity="sha512-B1mG20gde4TfQx8dZ4yGlmqm/uZAy//Ln0nDGrSxIPuKnZQdx7fA2Xt1VZh1j37kCp4W0KJ1xOlJ2zzhMjDyBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- Embed -->
         <meta property="og:title" content="Robert S.">
         <meta property="og:description" content="A developer and tech enthusiast from the Netherlands.">
@@ -35,40 +38,40 @@
         <meta name="theme-color" content="#111827">
     </head>
     <body class="bg-darkBlue-default text-white font-mono">
-        <div class="h-screen top-0 left-0">
-            <!-- Header -->
-            <header x-data="{ mobileMenuOpen : false }" class="body-font animated">
-                <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row">
-                    <div class="flex">
-                        <a href="/" class="flex title-font font-medium items-center mb-4 md:mb-0">
-                            <span class="text-2xl font-bold hover:text-gray-400 duration-200">Robert S.</span>
-                        </a>
-                        <button @click="mobileMenuOpen = !mobileMenuOpen"
-                            class="inline-block md:hidden w-8 h-8 text-gray-400 focus:text-white p-1 ml-auto">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M2 6C2 5.44772 2.44772 5 3 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H3C2.44772 7 2 6.55228 2 6Z"
-                                    fill="currentColor" />
-                                <path
-                                    d="M2 12.0322C2 11.4799 2.44772 11.0322 3 11.0322H21C21.5523 11.0322 22 11.4799 22 12.0322C22 12.5845 21.5523 13.0322 21 13.0322H3C2.44772 13.0322 2 12.5845 2 12.0322Z"
-                                    fill="currentColor" />
-                                <path
-                                    d="M3 17.0645C2.44772 17.0645 2 17.5122 2 18.0645C2 18.6167 2.44772 19.0645 3 19.0645H21C21.5523 19.0645 22 18.6167 22 18.0645C22 17.5122 21.5523 17.0645 21 17.0645H3Z"
-                                    fill="currentColor" />
-                            </svg>
-                        </button>
-                    </div>
-                    <nav class="md:ml-auto md:flex flex-wrap flex-col md:flex-row md:space-x-4 items-center w-full pt-2 md:pt-0 md:w-auto text-lg justify-center font-semibold"
-                        :class="{ 'flex' : mobileMenuOpen , 'hidden' : !mobileMenuOpen}" @click.away="mobileMenuOpen = false">
-                        <a class="w-full sm:w-auto flex-none bg-darkBlue-default text-gray-400 hover:text-white text-sm leading-6 font-semibold py-2 rounded focus:ring-2 focus:ring-offset-2 focus:outline-none transition-colors duration-200 mr-auto mr-0@m"
-                            href="#projects">Projects</a>
-                        <a class="w-full sm:w-auto flex-none bg-darkBlue-default text-gray-400 hover:text-white text-sm leading-6 font-semibold py-2 rounded focus:ring-2 focus:ring-offset-2 focus:outline-none transition-colors duration-200 mr-auto mr-0@m"
-                            href="#about">About</a>
-                        <a class="w-full sm:w-auto flex-none bg-darkBlue-light hover:bg-darkBlue-lightest text-sm text-gray-400 hover:text-white leading-6 font-semibold py-2 px-5 rounded focus:ring-2 focus:ring-offset-2 focus:outline-none transition-colors duration-200 mr-auto mr-0@m"
-                            href="#contact">Contact</a>
-                    </nav>
+        <!-- Navbar -->
+        <nav x-data="{ mobileMenuOpen : false }" class="body-font" @click.outside="mobileMenuOpen = false">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row">
+                <div class="flex">
+                    <a href="/" class="flex title-font font-medium items-center mb-4 md:mb-0">
+                        <span class="text-2xl font-bold hover:text-gray-400 duration-200">Robert S.</span>
+                    </a>
+                    <button @click="mobileMenuOpen = !mobileMenuOpen"
+                        class="inline-block md:hidden w-8 h-8 text-gray-400 focus:text-white p-1 ml-auto">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2 6C2 5.44772 2.44772 5 3 5H21C21.5523 5 22 5.44772 22 6C22 6.55228 21.5523 7 21 7H3C2.44772 7 2 6.55228 2 6Z"
+                                fill="currentColor" />
+                            <path
+                                d="M2 12.0322C2 11.4799 2.44772 11.0322 3 11.0322H21C21.5523 11.0322 22 11.4799 22 12.0322C22 12.5845 21.5523 13.0322 21 13.0322H3C2.44772 13.0322 2 12.5845 2 12.0322Z"
+                                fill="currentColor" />
+                            <path
+                                d="M3 17.0645C2.44772 17.0645 2 17.5122 2 18.0645C2 18.6167 2.44772 19.0645 3 19.0645H21C21.5523 19.0645 22 18.6167 22 18.0645C22 17.5122 21.5523 17.0645 21 17.0645H3Z"
+                                fill="currentColor" />
+                        </svg>
+                    </button>
                 </div>
-            </header>
+                <nav class="md:ml-auto md:flex flex-wrap flex-col md:flex-row md:space-x-4 items-center w-full pt-2 md:pt-0 md:w-auto text-lg justify-center font-semibold"
+                    :class="{ 'flex': mobileMenuOpen , 'hidden': !mobileMenuOpen}">
+                    <a class="w-full sm:w-auto flex-none bg-darkBlue-default text-gray-400 hover:text-white text-sm leading-6 font-semibold py-2 rounded focus:ring-2 focus:ring-offset-2 focus:outline-none transition-colors duration-200 mr-auto mr-0@m"
+                        href="#projects" @click="mobileMenuOpen = false">Projects</a>
+                    <a class="w-full sm:w-auto flex-none bg-darkBlue-default text-gray-400 hover:text-white text-sm leading-6 font-semibold py-2 rounded focus:ring-2 focus:ring-offset-2 focus:outline-none transition-colors duration-200 mr-auto mr-0@m"
+                        href="#about" @click="mobileMenuOpen = false">About</a>
+                    <a class="w-full sm:w-auto flex-none bg-darkBlue-light hover:bg-darkBlue-lightest text-sm text-gray-400 hover:text-white leading-6 font-semibold py-2 px-5 rounded focus:ring-2 focus:ring-offset-2 focus:outline-none transition-colors duration-200 mr-auto mr-0@m"
+                        href="#contact" @click="mobileMenuOpen = false">Contact</a>
+                </nav>
+            </div>
+        </nav>
+        <div class="h-screen top-0 left-0">
             <!-- Hero -->
             <section id="hero" class="body-font h-1/2 m-auto absolute inset-0">
                 <div class="container flex mx-auto items-center justify-center absolute inset-0">
@@ -213,7 +216,6 @@
             </div>
         </footer>
         <script src="./assets/js/main.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.2.2/cdn.min.js" integrity="sha512-B1mG20gde4TfQx8dZ4yGlmqm/uZAy//Ln0nDGrSxIPuKnZQdx7fA2Xt1VZh1j37kCp4W0KJ1xOlJ2zzhMjDyBw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js" integrity="sha512-sIqUEnRn31BgngPmHt2JenzleDDsXwYO+iyvQ46Mw6RL+udAUZj2n/u/PGY80NxRxynO7R9xIGx5LEzw4INWJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     </body>
 </html>
