@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Body */
+body {
+    @apply bg-gray-900 text-white;
+}
+
+/* Scrollbar */
+html, body {
+    scrollbar-color: #F43F5E #18181B;
+    scrollbar-width: thin;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 15px;
+}
+::-webkit-scrollbar-track-piece {
+    background-color: #18181B;
+}
+::-webkit-scrollbar-thumb:vertical {
+    height: 30px;
+    background-color: #F43F5E;
+}
+
+/* Links */
+a {
+    @apply text-rose-500;
+}
+
+a:hover {
+    @apply text-rose-600 duration-200;
+}
+
+/* Tooltip */
+.tooltip {
+    @apply invisible absolute;
+    opacity: 0;
+}
+
+.has-tooltip:hover .tooltip {
+    @apply visible z-50;
+    opacity: 100%;
+    transition:opacity 0.2s;
+}

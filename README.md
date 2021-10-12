@@ -1,11 +1,37 @@
+![GitHub](https://img.shields.io/github/license/Wallvon/website?color=A42E2B&logo=gnu&logoColor=white&style=for-the-badge)
+
 # Website by Robert S.
 
-A new website I made with TailwindCSS. I did not need anything flashy, so I went with a simple colour palette and a pretty basic layout.
+A new portfolio I made with Next.js and TailwindCSS. I did not use any design tool (like Figma) to make this since I honestly suck at design.
+
+## Tools and services used
+
+<table>
+  <tr>
+    <td align="center">
+        <a href="https://nextjs.org/">
+            <img src="https://simpleicons.org/icons/nextdotjs.svg" width="100px;" alt="Next.js"/>
+            <br/>
+            <sub>
+                <b>Next.js</b>
+            </sub>
+        </a>
+        <br/>
+    </td>
+    <td align="center">
+        <a href="https://tailwindcss.com/">
+            <img src="https://simpleicons.org/icons/tailwindcss.svg" width="100px;" alt="TailwindCSS"/>
+            <br/>
+            <sub>
+                <b>TailwindCSS</b>
+            </sub>
+        </a>
+        <br/>
+    </td>
+  </tr>
+</table>
+
 
 ## License
 
-![License Badge](https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by-nc-nd.svg)
-
-The aforementioned code is protected and released to the public under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) License which can be viewed on the Creative Commons website (https://creativecommons.org/licenses/by-nc-nd/4.0/). Any failure to comply with the terms designated in the license will be met with swift judicial action by the author.
-
-By downloading, executing or otherwise transferring the code by any means you are legally bound to the terms stipulated in the license
+See [LICENSE.MD](https://github.com/Wallvon/website/blob/master/LICENSE.md).
