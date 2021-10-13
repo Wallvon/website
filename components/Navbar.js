@@ -1,5 +1,6 @@
 import Link from "next/link";
 import {useState} from "react";
+import NavLink from "./NavLink";
 
 export default function Navbar() {
     const [active, setActive] = useState(false)
@@ -43,21 +44,26 @@ export default function Navbar() {
                         active ? "flex" : "hidden"
                     }   md:ml-auto md:flex flex-wrap flex-col md:flex-row md:space-x-4 items-center w-full pt-2 md:pt-0 md:w-auto text-lg justify-center font-semibold`}
                 >
-                    <Link href="/work">
-                        <a className="w-full sm:w-auto flex-none text-gray-400 hover:text-white duration-200 text-md py-2 rounded mr-auto mr-0@m">
+                    <NavLink href="/">
+                        <a className="w-full sm:w-auto flex-none hover:text-white duration-200 text-md py-2 rounded mr-auto mr-0@m">
+                            Home
+                        </a>
+                    </NavLink>
+                    <NavLink href="/work">
+                        <a className="w-full sm:w-auto flex-none hover:text-white duration-200 text-md py-2 rounded mr-auto mr-0@m">
                             Work
                         </a>
-                    </Link>
-                    <Link href="/about">
-                        <a className="w-full sm:w-auto flex-none text-gray-400 hover:text-white duration-200 text-md py-2 rounded mr-auto mr-0@m">
+                    </NavLink>
+                    <NavLink href="/about">
+                        <a className="w-full sm:w-auto flex-none hover:text-white duration-200 text-md py-2 rounded mr-auto mr-0@m">
                             About
                         </a>
-                    </Link>
-                    <Link href="/contact">
-                        <a className="w-full sm:w-auto flex-none text-gray-400 hover:text-white duration-200 text-md py-2 rounded mr-auto mr-0@m">
+                    </NavLink>
+                    <NavLink href="/contact">
+                        <a className="w-full sm:w-auto flex-none hover:text-white duration-200 text-md py-2 rounded mr-auto mr-0@m">
                             Contact
                         </a>
-                    </Link>
+                    </NavLink>
                 </div>
             </nav>
         </>

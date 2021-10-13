@@ -11,7 +11,7 @@ export default function Footer() {
                         <a>Robert S.</a>
                     </Link>
                 </h4>
-                <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start space-x-2">
+                <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start gap-2.5">
                     <a href="mailto:admin@robert-s.dev" className="text-gray-400">
                         <svg fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <title>Email</title>
