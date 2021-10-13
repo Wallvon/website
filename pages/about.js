@@ -25,7 +25,7 @@ export default function About() {
                                 <h1 className="text-center md:text-6xl text-3xl font-bold">
                                     About <span className="text-rose-500">me</span>
                                 </h1>
-                                <div className="container lg:w-3/5 w-11/12 mx-auto">
+                                <div className="container lg:w-3/5 w-11/12 mx-auto mt-4">
                                     <div className="text-left md:text-justify space-y-6 text-lg font-medium text-gray-200">
                                         <p>
                                             Hey, I'm Robert - a full-stack developer from the Netherlands with approximately three years of back-end and five years of front-end development experience. Nowadays, I mainly use Next.js, TailwindCSS and Python for my projects, but I have used different tools and frameworks in the past. I also love the open-source community, <a className="text-gray-200 underline" href="https://github.com/Wallvon/website" target="_blank" rel="noopener noreferrer">and this website is open-source too :)</a>. My coding knowledge is mostly based on many years of experimenting and trying, and I am happy to have made it this far.
