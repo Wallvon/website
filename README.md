@@ -28,6 +28,26 @@ A new portfolio I made with Next.js and TailwindCSS. I did not use any design to
         </a>
         <br/>
     </td>
+    <td align="center">
+        <a href="https://www.framer.com/motion/">
+            <img src="https://simpleicons.org/icons/framer.svg" width="100px;" alt="Framer Motion"/>
+            <br/>
+            <sub>
+                <b>Framer Motion</b>
+            </sub>
+        </a>
+        <br/>
+    </td>
+    <td align="center">
+        <a href="https://pages.cloudflare.com/">
+            <img src="https://simpleicons.org/icons/cloudflare.svg" width="100px;" alt="Cloudflare Pages"/>
+            <br/>
+            <sub>
+                <b>Cloudflare Pages</b>
+            </sub>
+        </a>
+        <br/>
+    </td>
   </tr>
 </table>
 
