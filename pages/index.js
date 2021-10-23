@@ -18,9 +18,10 @@ export default function Home() {
             <meta property="og:url" content="https://robert-s.dev/" />
             <meta property="og:image" content="https://robert-s.dev/logo.jpg" />
             <meta name="theme-color" content="#F43F5E" />
+            <meta name="twitter:card" content="summary" />
+            <meta name="twitter:site" content="@ThatGuy5275" />
             <meta name="twitter:title" content="Robert S." />
             <meta name="twitter:description" content="A developer and tech enthusiast from the Netherlands."/>
-            <meta name="twitter:site" content="@ThatGuy5275" />
             <meta name="twitter:image" content="https://robert-s.dev/logo.jpg"/>
         </Head>
 
