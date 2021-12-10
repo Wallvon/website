@@ -1,6 +1,6 @@
 import Link from "next/link";
 import {useState} from "react";
-import NavLink from "./NavLink";
+import NavLink from "./navlink";
 
 export default function Navbar() {
     const [active, setActive] = useState(false)

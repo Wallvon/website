@@ -1,11 +1,12 @@
 import Link from "next/link";
+import RomanNumerals from './romanNumerals';
 
 export default function Footer() {
     return (
         <>
             <footer className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
                 <p className="text-xl">
-                    © MMXXI
+                    © {RomanNumerals(new Date().getFullYear())}
                     {" "}
                     <Link href="/">
                         <a>Robert S.</a>
