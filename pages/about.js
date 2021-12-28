@@ -1,4 +1,4 @@
-import Layout from "../components/layout";
+import Layout from "../layout/layout";
 import { motion } from "framer-motion";
 
 export default function About() {
@@ -18,24 +18,47 @@ export default function About() {
                                     </p>
                                     <div className="space-y-2">
                                         <p>
-                                            I can use the following technologies/frameworks mostly fluently:
+                                            I can use the following languages fluently:
                                         </p>
-                                        <ul className="list-disc pl-4">
-                                            <li>HTML, CSS & JS</li>
-                                            <li>TailwindCSS, Bootstrap, UIkit & Cirrus UI</li>
-                                            <li>Python</li>
-                                            <li>Flask & similar frameworks (like Sanic)</li>
-                                            <li>MySQL, PostgreSQL, MongoDB, Redis</li>
-                                        </ul>
+                                        <div className="flex">
+                                            <img alt="Python" src="https://img.shields.io/badge/-Python-18181b?style=for-the-badge&logo=python&logoColor=F43F5E" />
+                                            <img alt="SQL" src="https://img.shields.io/badge/-SQL-18181b?style=for-the-badge&logo=postgresql&logoColor=F43F5E" />
+                                            <img alt="Javascript" src="https://img.shields.io/badge/-Javascript-18181b?style=for-the-badge&logo=javascript&logoColor=F43F5E" />
+                                            <img alt="Typescript" src="https://img.shields.io/badge/-Typescript-18181b?style=for-the-badge&logo=typescript&logoColor=F43F5E" />
+                                            <img alt="HTML5" src="https://img.shields.io/badge/-HTML5-18181b?style=for-the-badge&logo=html5&logoColor=F43F5E" />
+                                            <img alt="CSS3" src="https://img.shields.io/badge/-CSS3-18181b?style=for-the-badge&logo=css3&logoColor=F43F5E" />
+                                        </div>
                                         <p>
-                                            And I am currently learning the following technologies/frameworks:
+                                            I can use the following frameworks and libraries fluently:
                                         </p>
-                                        <ul className="list-disc pl-4">
-                                            <li>Go</li>
-                                            <li>Rust</li>
-                                            <li>React/Next.js</li>
-                                            <li>Docker</li>
-                                        </ul>
+                                        <div className="flex">
+                                            <img alt="Tailwind CSS" src="https://img.shields.io/badge/-Tailwind CSS-18181b?style=for-the-badge&logo=tailwindcss&logoColor=F43F5E" />
+                                            <img alt="Bootstrap" src="https://img.shields.io/badge/-Bootstrap-18181b?style=for-the-badge&logo=bootstrap&logoColor=F43F5E" />
+                                            <img alt="UIkit" src="https://img.shields.io/badge/-UIkit-18181b?style=for-the-badge&logo=uikit&logoColor=F43F5E" />
+                                            <img alt="Flask" src="https://img.shields.io/badge/-Flask-18181b?style=for-the-badge&logo=flask&logoColor=F43F5E" />
+                                            <img alt="Falcon" src="https://img.shields.io/badge/-Falcon-18181b?style=for-the-badge&logo=falcon&logoColor=F43F5E" />
+                                            <img alt="React" src="https://img.shields.io/badge/-React-18181b?style=for-the-badge&logo=react&logoColor=F43F5E" />
+                                            <img alt="Next.js" src="https://img.shields.io/badge/-Next.js-18181b?style=for-the-badge&logo=next.js&logoColor=F43F5E" />
+                                            <img alt="Alpine.js" src="https://img.shields.io/badge/-Alpine.js-18181b?style=for-the-badge&logo=alpine.js&logoColor=F43F5E" />
+                                            <img alt="Prisma" src="https://img.shields.io/badge/-Prisma-18181b?style=for-the-badge&logo=prisma&logoColor=F43F5E" />
+                                        </div>
+                                        <p>
+                                            Miscellaneous tools that I use:
+                                        </p>
+                                        <div className="flex">
+                                            <img alt="Linux" src="https://img.shields.io/badge/-Linux-18181b?style=for-the-badge&logo=linux&logoColor=F43F5E" />
+                                            <img alt="Git" src="https://img.shields.io/badge/-Git-18181b?style=for-the-badge&logo=git&logoColor=F43F5E" />
+                                            <img alt="NGINX" src="https://img.shields.io/badge/-NGINX-18181b?style=for-the-badge&logo=nginx&logoColor=F43F5E" />
+                                            <img alt="Travis CI" src="https://img.shields.io/badge/-Travis CI-18181b?style=for-the-badge&logo=travisci&logoColor=F43F5E" />
+                                        </div>
+                                        <p>
+                                            Currently learning:
+                                        </p>
+                                        <div className="flex">
+                                            <img alt="Go" src="https://img.shields.io/badge/-Go-18181b?style=for-the-badge&logo=go&logoColor=F43F5E" />
+                                            <img alt="Rust" src="https://img.shields.io/badge/-Rust-18181b?style=for-the-badge&logo=rust&logoColor=F43F5E" />
+                                            <img alt="Docker" src="https://img.shields.io/badge/-Docker-18181b?style=for-the-badge&logo=docker&logoColor=F43F5E" />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
