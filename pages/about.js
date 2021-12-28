@@ -20,7 +20,7 @@ export default function About() {
                                         <p>
                                             I can use the following languages fluently:
                                         </p>
-                                        <div className="flex">
+                                        <div className="grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 lg:grid-rows-1 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
                                             <img alt="Python" src="https://img.shields.io/badge/-Python-18181b?style=for-the-badge&logo=python&logoColor=F43F5E" />
                                             <img alt="SQL" src="https://img.shields.io/badge/-SQL-18181b?style=for-the-badge&logo=postgresql&logoColor=F43F5E" />
                                             <img alt="Javascript" src="https://img.shields.io/badge/-Javascript-18181b?style=for-the-badge&logo=javascript&logoColor=F43F5E" />
@@ -31,7 +31,7 @@ export default function About() {
                                         <p>
                                             I can use the following frameworks and libraries fluently:
                                         </p>
-                                        <div className="flex">
+                                        <div className="grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 lg:grid-rows-1 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
                                             <img alt="Tailwind CSS" src="https://img.shields.io/badge/-Tailwind CSS-18181b?style=for-the-badge&logo=tailwindcss&logoColor=F43F5E" />
                                             <img alt="Bootstrap" src="https://img.shields.io/badge/-Bootstrap-18181b?style=for-the-badge&logo=bootstrap&logoColor=F43F5E" />
                                             <img alt="UIkit" src="https://img.shields.io/badge/-UIkit-18181b?style=for-the-badge&logo=uikit&logoColor=F43F5E" />
@@ -45,7 +45,7 @@ export default function About() {
                                         <p>
                                             Miscellaneous tools that I use:
                                         </p>
-                                        <div className="flex">
+                                        <div className="grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 lg:grid-rows-1 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
                                             <img alt="Linux" src="https://img.shields.io/badge/-Linux-18181b?style=for-the-badge&logo=linux&logoColor=F43F5E" />
                                             <img alt="Git" src="https://img.shields.io/badge/-Git-18181b?style=for-the-badge&logo=git&logoColor=F43F5E" />
                                             <img alt="NGINX" src="https://img.shields.io/badge/-NGINX-18181b?style=for-the-badge&logo=nginx&logoColor=F43F5E" />
@@ -54,7 +54,7 @@ export default function About() {
                                         <p>
                                             Currently learning:
                                         </p>
-                                        <div className="flex">
+                                        <div className="grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 lg:grid-rows-1 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
                                             <img alt="Go" src="https://img.shields.io/badge/-Go-18181b?style=for-the-badge&logo=go&logoColor=F43F5E" />
                                             <img alt="Rust" src="https://img.shields.io/badge/-Rust-18181b?style=for-the-badge&logo=rust&logoColor=F43F5E" />
                                             <img alt="Docker" src="https://img.shields.io/badge/-Docker-18181b?style=for-the-badge&logo=docker&logoColor=F43F5E" />
