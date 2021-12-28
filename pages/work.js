@@ -1,4 +1,4 @@
-import Layout from "../layout/layout";
+import Layout from "../components/layout";
 import { motion } from "framer-motion";
 
 export default function Work() {
