@@ -49,7 +49,7 @@ export default function Contact() {
                                         </svg>
                                         <p className="text-white text-xl overflow-ellipsis">Wallvon</p>
                                     </a>
-                                    <button onClick={handleDiscordClick} className="bg-gray-800 text-white p-4 text-center rounded space-y-0.5 has-tooltip">
+                                    <button onClick={handleDiscordClick} className="bg-gray-800 text-white p-4 text-center rounded space-y-0.5 has-tooltip hover:text-rose-600 duration-200">
                                         <svg
                                             fill="currentColor"
                                             className="mx-auto max-h-12"
