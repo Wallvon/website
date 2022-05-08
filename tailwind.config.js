@@ -1,14 +1,12 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  mode: 'jit',
-  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}', './layout/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}', './layout/**/*.{js,ts,jsx,tsx}'],
   theme: {
     colors: {
       white: colors.white,
       black: colors.black,
-      gray: colors.gray,
+      gray: colors.zinc,
       rose: colors.rose
     },
     extend: {
@@ -16,9 +14,6 @@ module.exports = {
         'sans': ['Space Grotesk']
       }
     }
-  },
-  variants: {
-    extend: {}
   },
   plugins: []
 }
