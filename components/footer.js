@@ -2,7 +2,7 @@ import {useState} from 'react';
 import Link from "next/link";
 import RomanNumerals from '../lib/romanNumerals';
 import { siGithub, siDiscord, siTwitter, siInstagram } from 'simple-icons/icons';
-import { Linkedin, Mail } from 'react-feather';
+import { Linkedin, Mail } from 'lucide-react';
 
 export default function Footer() {
     const initialDiscordText = 'Roberto#1762';
@@ -30,7 +30,9 @@ export default function Footer() {
                 </p>
                 <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start gap-x-4 md:gap-2.5">
                     <a href="mailto:admin@robert-s.dev" className="text-gray-400">
-                        <Mail className="w-5 h-5" />
+                        <Mail className="w-5 h-5">
+                            <title>Email</title>
+                        </Mail>
                     </a>
                     <a href="https://github.com/Wallvon" className="text-gray-400" target="_blank" rel="noopener noreferrer">
                         <svg
@@ -54,7 +56,9 @@ export default function Footer() {
                         <span className='tooltip bg-gray-800 text-white rounded shadow-lg p-1 -mt-14'>{discordText}</span>
                     </button>
                     <a href="https://www.linkedin.com/in/robert-stokreef/" className="text-gray-400" target="_blank" rel="noopener noreferrer">
-                        <Linkedin fill="currentColor" strokeWidth="0" className="w-5 h-5" />
+                        <Linkedin fill="currentColor" strokeWidth="0" className="w-5 h-5">
+                            <title>Linkedin</title>
+                        </Linkedin>
                     </a>
                     <a href="https://twitter.com/ThatGuy5275" className="text-gray-400" target="_blank" rel="noopener noreferrer">
                         <svg

@@ -23,7 +23,7 @@ export default function Work() {
                                             <h1 className="md:text-6xl text-3xl font-bold text-center">
                                                 Coming soon
                                             </h1>
-                                            <p className="text-gray-200 italic text-lg">This page has been coming soon for a year already hasn't it? ಥ﹏ಥ</p>
+                                            <p className="text-gray-200 italic text-lg">I should work on something, shouldn't I? ⚆ _ ⚆</p>
                                         </div>
                                     </div>
                                 </div>

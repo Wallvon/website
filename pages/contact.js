@@ -2,7 +2,7 @@ import {useState} from 'react';
 import Layout from "../layout/layout";
 import {motion} from "framer-motion";
 import { siGithub, siDiscord, siTwitter, siInstagram } from 'simple-icons/icons';
-import { Linkedin, Mail } from 'react-feather';
+import { Linkedin, Mail } from 'lucide-react';
 
 export default function Contact() {
     const initialDiscordText = 'Roberto#1762';
@@ -35,7 +35,9 @@ export default function Contact() {
                             <div className="mx-auto overflow-auto mt-4">
                                 <div className="grid gap-8 px-4 md:px-0 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
                                     <a href="mailto:admin@robert-s.dev" className="bg-gray-800 text-white p-4 text-center rounded space-y-0.5">
-                                        <Mail className="mx-auto max-h-12" size={48} />
+                                        <Mail className="mx-auto max-h-12" size={48}>
+                                            <title>Email</title>
+                                        </Mail>
                                         <p className="text-white text-xl overflow-ellipsis">admin@robert-s.dev</p>
                                     </a>
                                     <a href="https://github.com/Wallvon" className="bg-gray-800 text-white p-4 text-center rounded space-y-0.5" target="_blank" rel="noopener noreferrer">
@@ -62,7 +64,9 @@ export default function Contact() {
                                         <p className="text-white text-xl overflow-ellipsis">Roberto#1762</p>
                                     </button>
                                     <a href="https://www.linkedin.com/in/robert-stokreef/" className="bg-gray-800 text-white p-4 text-center rounded space-y-0.5" target="_blank" rel="noopener noreferrer">
-                                        <Linkedin fill="currentColor" strokeWidth="0" className="mx-auto max-h-12" size={48} />
+                                        <Linkedin fill="currentColor" strokeWidth="0" className="mx-auto max-h-12" size={48}>
+                                            <title>Linkedin</title>
+                                        </Linkedin>
                                         <p className="text-white text-xl overflow-ellipsis">Robert Stokreef</p>
                                     </a>
                                     <a href="https://twitter.com/ThatGuy5275" className="bg-gray-800 text-white p-4 text-center rounded space-y-0.5" target="_blank" rel="noopener noreferrer">

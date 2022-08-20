@@ -6,11 +6,12 @@ export default function Layout({
   children,
   title = '',
                                }) {
+  title = `${title && `${title} —`} Robert S.`
   return (
       <>
           <Head>
               <meta charSet="UTF-8"/>
-              <title>Robert S. {title && `- ${title}`}</title>
+              <title>{title}</title>
               <meta name="description" content="A developer and tech enthusiast from the Netherlands." />
               <meta name="keywords" content="HTML,CSS,JavaScript,Python,SQL,MySQL,PostgreSQL,MongoDB,Redis,Flask,Falcon,Tailwind,TailwindCSS,Bootstrap" />
               <meta name="author" content="Robert Stokreef" />
