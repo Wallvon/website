@@ -7,7 +7,7 @@
     "export": "next export"
   },
   "dependencies": {
-    "framer-motion": "^6.3.3",
+    "framer-motion": "^7.3.2",
     "lucide-react": "^0.88.0",
     "next": "^12.3.0",
     "prop-types": "^15.8.1",
