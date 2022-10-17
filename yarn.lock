@@ -687,10 +687,10 @@ scheduler@^0.23.0:
   dependencies:
     loose-envify "^1.1.0"
 
-simple-icons@^7.11.0:
-  version "7.11.0"
-  resolved "https://registry.yarnpkg.com/simple-icons/-/simple-icons-7.11.0.tgz#20bab5ab23a0d1431fb95f2e1cd42f035cb41deb"
-  integrity sha512-RpPJ8UHLOcsNHn1Ms+TP5fCUwv7xc+S/sZF9QilRP594PQ7bgjvhMwIHslx1kCOP09FDOo+LIelRFc55QHfojw==
+simple-icons@^7.16.0:
+  version "7.16.0"
+  resolved "https://registry.yarnpkg.com/simple-icons/-/simple-icons-7.16.0.tgz#66737fed9df3cf2c42a540cffd59ab9e684cecfd"
+  integrity sha512-LEH2BdPyqQY5jj1TxDxnfjnJwdZlU/Paa46a6VSHy/Qosly2yvWb3CI9AjPendaA+ZpeSISuAeWVFDMyAX4Gwg==
 
 source-map-js@^1.0.2:
   version "1.0.2"
