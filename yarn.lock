@@ -435,10 +435,10 @@ loose-envify@^1.1.0, loose-envify@^1.4.0:
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
 
-lucide-react@^0.89.0:
-  version "0.89.0"
-  resolved "https://registry.yarnpkg.com/lucide-react/-/lucide-react-0.89.0.tgz#d2bfd108979b3b730441c44aa05b74727fa33e26"
-  integrity sha512-PPTa9/Zv2VOCrdUj5DEfab1flHo/VGEvicvcRUPTXeggK/hDySBVHmeIcB0VAsZBPJrZFdKLP2t70T0+Yn4p4g==
+lucide-react@^0.92.0:
+  version "0.92.0"
+  resolved "https://registry.yarnpkg.com/lucide-react/-/lucide-react-0.92.0.tgz#fb4bbac303638d37ac15d1ae6a355ff3f60bb754"
+  integrity sha512-rKnAxjhDPvvmKvvij+oeA+qJicQwXf+4hfANIrMPlDiBKJfrDv1HGF496ZiTBevcrRJ/8/C3rrnUb77EAhHHlA==
 
 merge2@^1.3.0:
   version "1.4.1"
